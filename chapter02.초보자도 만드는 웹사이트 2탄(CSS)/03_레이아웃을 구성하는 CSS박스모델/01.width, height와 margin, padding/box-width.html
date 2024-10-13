@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div { border: 1px solid black; }
+
+        .box1 {
+            width: 400px; /* 브라우저 크기에 상관없이 고정되는 절대 단위(px)*/
+
+            /* height는 따로 지정을 해주지 않으면 태그 안에 있는 콘텐츠의 높이에 맞게 높이가 생성된다. */
+            /* width는 따로 지정을 해주지 않으면 블록태그는 width가 100%, 인라인태그면 width는 콘텐츠에 너비에 맞게 생성된다. */
+            height: 100px;
+        }
+
+        .box2 {
+            width: 50%; /* 브라우저 크기에 맞춰서 width를 바꿔주는 상대 단위(%) */ 
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">안녕하세요. 김하서입니다.</div>
+    <div class="box2"><img src="./images/bear.jpg" alt="."></div>
+</body>
+</html>

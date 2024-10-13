@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+   </head>
+   <body>
+      <!-- <form>태그: 데이터를 담아서 전송하는 택배상자와 같은 역할(반드시 사용)
+            - action: 데이터를 전송할 주소
+            - method: 데이터를 전송하는 방식(post-숨김, get-노출) 
+      -->
+      <!-- name속성: 서버가 구분하기 위한 이름, value속성: 서버가 받는 값  -->
+      <form action="/order" method="post">
+         <fieldset>
+            <legend>상품 선택</legend>
+            <p><b>주문할 상품을 선택해 주세요.</b></p>
+            <!-- <checkbox>: 중복선택 가능 -->
+            <!-- value속성의 속성값이 실제 서버로 전송되는 데이터 -->
+            <!-- value값은 임의로 지정, 한글X, 영문자 숫자 등 가능 -->
+            <input type="checkbox" value="s_3" name="box"> 선물용 3kg
+            <input type="checkbox" value="s_5" name="box"> 선물용 5kg
+            <input type="checkbox" value="f_3" name="box"> 가정용 3kg
+            <input type="checkbox" value="f_5" name="box"> 가정용 5kg
+
+            <p><b>포장 선택</b></p>
+            <!-- <radio>: 중복선택 X -->
+            <!-- value속성의 속성값이 실제 서버로 전송되는 데이터 -->
+            <input type="radio" value="yes" name="gift"> 선물 포장
+            <input type="radio" value="no" name="gift"> 선물 포장 안함
+         </fieldset>
+         <fieldset>
+            <legend>배송 정보</legend>
+            <ul>
+               <li>
+                  <label for="user-name">이름</label>
+                  <input type="text" id="user-name" name="user-name"/>
+               </li>
+               <li>
+                  <label for="addr">배송주소</label>
+                  <input type="text" id="addr" name="addr"/>
+               </li>
+               <li>
+                  <label for="email">이메일</label>
+                  <input type="email" id="email" name="email"/>
+               </li>
+               <li>
+                  <label for="phone">연락처</label>
+                  <input type="tel" id="phone" name="phone"/>
+               </li>
+               <li>
+                  <input type="submit" value="주문" />
+               </li>
+            </ul>
+         </fieldset>
+      </form>
+   </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #round {
+            border-radius: 25px;
+            /* 이미지가 정사각형일때만 완전한 원형의 원이 만들어지고 직사각형 일때는 타원형으로 만들어진다. */
+            /* border-radius: 50%; */
+        }
+
+        #circle {
+            /* 이미지 width의 절반을 주면 원형을 만들 수 있음 */
+            border-radius: 50%;
+            /* border-radius: 150px; */
+        }
+    </style>
+</head>
+<body>
+    <img id="round" src="../images/cat.jpg" alt="고양이">
+    <img id="circle" src="../images/photo.jpg" alt=".">
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+   </head>
+   <body>
+      <form action="/login" method="post">
+         <!-- <label>과 <input>태그는  웹접근성을 위해 반드시 같이 사용 -->
+         <label for="user_id">아이디:</label>
+         <!-- size속성: 영문자 대문자 갯수만큼의 size. CSS로 지정가능하므로 사용하지 않아도 된다. -->
+         <input type="text" id="user_id" name="use_id" size="10" />
+
+         <label for="user_pw">비밀번호:</label>
+         <input type="password" id="user_pw" name="user_pw" size="10" />
+
+         <!-- submit버튼 클릭시 서버에 사용자가 입력한 데이터 전송 -->
+         <input type="submit" value="로그인" />
+         <input type="reset" value="취소">
+      </form>
+   </body>
+</html>

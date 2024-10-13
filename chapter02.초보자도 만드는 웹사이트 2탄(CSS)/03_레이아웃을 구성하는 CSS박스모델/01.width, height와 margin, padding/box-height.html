@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* height를 %(비율)로 주는 방법 */
+        /* html, body는 기본적으로 height를 가지고 있는 않으므로 아래와 같이 height를 지정해줘야 한다. */
+        html, body {
+            margin: 0; /* body의 기본 margin을 없애준다 */
+            height: 100%;
+        }
+
+        .box1 {
+            border: 1px solid black;
+            height: 70%; /* 브라우저의 높이에 따라서 height 70%를 지정 */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem beatae unde, reiciendis maxime rem modi maiores, numquam ex vel inventore aperiam, quasi eligendi debitis dicta ut saepe atque illo repellat.
+    </div>
+</body>
+</html>
